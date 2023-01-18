@@ -29,7 +29,7 @@ fi
 # start docker container WITH gpu and log volume
 docker run -d \
   --rm \
-  --gpus all \
+#  --gpus all \
   -p ${API_PORT}:80 \
   -e "WORKERS=${WORKERS}" \
   -e "TIMEOUT=${TIMEOUT}" \
