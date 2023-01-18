@@ -27,9 +27,9 @@ if [ "$(docker ps -a | grep $JOB_NAME)" ]; then
 fi
 
 # start docker container WITH gpu and log volume
+#  --gpus all \
 docker run -d \
   --rm \
-#  --gpus all \
   -p ${API_PORT}:80 \
   -e "WORKERS=${WORKERS}" \
   -e "TIMEOUT=${TIMEOUT}" \
