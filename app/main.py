@@ -48,7 +48,7 @@ def generate(request: Request, body: InferenceInput):
     tokenizer = app.package["tokenizer"]
     model = app.package["model"]
     input_ids = tokenizer.encode(body.prompt, return_tensors='pt')
-    res = model.generate(input_ids, max_length=200, num_beams=4)
+    res = model.generate(input_ids, max_length=50, num_beams=1)
     
     results = {
         "code": tokenizer.decode(res[0])
