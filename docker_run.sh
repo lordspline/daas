@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export JOB_NAME="daas-job"
-export IMAGE="daas"
+export IMAGE="panic0/daas"
 export TAG="latest"
 export PYTHON_ENV="development"
 export API_PORT=8080
