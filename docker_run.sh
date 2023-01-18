@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export JOB_NAME="daas"
+export JOB_NAME="daas-job"
 export IMAGE="daas"
 export TAG="latest"
 export PYTHON_ENV="development"
